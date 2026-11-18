@@ -1,0 +1,233 @@
+<!--meta {
+  "title": "Sattva Group Plots & Homes | Authorised Channel Partner",
+  "description": "Buy Sattva Group projects through a RERA-registered channel partner: live availability, developer price sheets, site visits and paperwork help at no extra cost.",
+  "path": "/",
+  "priority": "1.0",
+  "featured": ["sattva-city", "sattva-vasanta-skye", "sattva-lumina", "sattva-forest-ridge", "sattva-la-vita", "sattva-kaveri-siri"],
+  "faq_schema": true
+} -->
+<!--head-->
+<link rel="preload" as="image" href="/images/sattva-kaveri-siri/kaveri-siri-layout-aerial-day.webp" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "{{ site_name }}",
+  "description": "Authorised channel partner for Sattva Group residential projects, run by RERA-registered agent {{ operator }}.",
+  "url": "{{ base_url }}/",
+  "telephone": "{{ phone_tel }}",
+  "email": "{{ email }}",
+  "founder": { "@type": "Person", "name": "{{ operator }}" },
+  "address": { "@type": "PostalAddress", "addressLocality": "{{ office_locality }}", "addressRegion": "{{ office_region }}", "addressCountry": "IN" },
+  "areaServed": ["Bengaluru", "Devanahalli", "Doddaballapur", "Nelamangala", "Mandya", "Karnataka"],
+  "identifier": ["K-RERA {{ rera_ka }}", "TN-RERA {{ rera_tn }}"]
+}
+</script>
+<!--/head-->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-media" style="background-image:url('/images/sattva-kaveri-siri/kaveri-siri-layout-aerial-day.webp')" aria-hidden="true"></div>
+  <div class="hero-content container">
+    <div class="hero-copy">
+      <p class="eyebrow">Authorised channel partner · Sattva Group projects</p>
+      <h1>Buy Into a Sattva Community, With Someone in Your Corner</h1>
+      <p class="lead">
+        This site is dedicated to Sattva Group projects. We check live availability with the developer, walk the site with you, explain the cost sheet line by line, and stay involved until your sale deed is registered.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/projects/">Browse {{ project_count }} Sattva Projects</a>
+        <a class="btn btn-outline" href="#how-it-works">How We Work</a>
+      </div>
+      <div class="hero-badges">
+        <div class="badge"><span>RERA</span><small>Registered agent, KA &amp; TN</small></div>
+        <div class="badge"><span>₹0</span><small>Extra cost to buyers</small></div>
+        <div class="badge"><span>All days</span><small>Site visits by appointment</small></div>
+      </div>
+    </div>
+    <aside class="hero-form-card" aria-label="Request project details">
+      <h2>Tell us what you're looking for</h2>
+      <p>Get the current price sheet and a short list of open units that match your budget.</p>
+      {% include form-short.html %}
+    </aside>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="section" id="featured">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Now selling</p>
+      <h2>Sattva Projects Buyers Are Asking About</h2>
+      <p>A cross-section of the {{ project_count }} Sattva communities we represent: airport-side apartments, family townships, row houses and plots.</p>
+    </div>
+    <div class="grid three">
+      {{ featured_projects }}
+    </div>
+    <p class="corridor-nav mt-lg" style="justify-content:center;"><strong>Browse by area:</strong> {{ corridor_links }}</p>
+    <p class="center"><a class="btn btn-primary" href="/projects/">See All {{ project_count }} Projects</a></p>
+  </div>
+</section>
+
+<!-- WHY A CHANNEL PARTNER -->
+<section class="section alt" id="why">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">What we do for you</p>
+      <h2>Why Buyers Book Sattva Projects Through Us</h2>
+      <p>A developer's sales desk represents the developer. We work on your side of the table, and you pay the same price.</p>
+    </div>
+    <div class="grid three">
+      <article class="icon-card">
+        <span class="icon" aria-hidden="true">📋</span>
+        <h3>Availability that's actually live</h3>
+        <p>We check which units, sizes and facings are open with Sattva's team before we send you a shortlist, so you don't fall for a plot that sold last week.</p>
+      </article>
+      <article class="icon-card">
+        <span class="icon" aria-hidden="true">💬</span>
+        <h3>Price and offers in writing</h3>
+        <p>You get the developer's current price sheet and any running scheme on paper, along with an estimate of stamp duty, registration and other charges.</p>
+      </article>
+      <article class="icon-card">
+        <span class="icon" aria-hidden="true">🚗</span>
+        <h3>Site visits that are worth the trip</h3>
+        <p>We book the slot with the site team, bring the layout marked with open plots, and meet you there, so the visit is about choosing, not waiting.</p>
+      </article>
+      <article class="icon-card">
+        <span class="icon" aria-hidden="true">🔎</span>
+        <h3>Documents checked before you pay</h3>
+        <p>RERA certificate, layout approval and the draft agreement for sale: we go through them with you and flag anything worth asking the developer about.</p>
+      </article>
+      <article class="icon-card">
+        <span class="icon" aria-hidden="true">🏦</span>
+        <h3>Loan coordination</h3>
+        <p>We connect you with lenders that have approved the project and help assemble the project papers they ask for, so sanction doesn't stall.</p>
+      </article>
+      <article class="icon-card">
+        <span class="icon" aria-hidden="true">🖋️</span>
+        <h3>Through to registration</h3>
+        <p>After booking we follow up on the agreement, payment milestones and registration date until the deed is in your name.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER -->
+<section class="developer-strip" aria-labelledby="dev-heading">
+  <div class="container">
+    <span class="logo-tile"><img src="/images/brand/sattva-group-logo.png" alt="Sattva Group logo" width="294" height="171" loading="lazy" /></span>
+    <div>
+      <h2 id="dev-heading">About Sattva Group</h2>
+      <p>Headquartered in Bengaluru, Sattva Group has built homes, office campuses and hospitality projects for more than three decades. Its residential portfolio runs from apartments to large plotted communities like Kaveri Siri.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">The process</p>
+      <h2>From First Call to Sale Deed</h2>
+      <p>Four steps, with no pressure at any of them. You can stop at any point.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Share your brief</h3>
+        <p>Budget, plot or home size, timeline, and whether you're buying to build, live in or hold.</p>
+      </div>
+      <div class="step">
+        <h3>Get a shortlist</h3>
+        <p>Open units that fit, with the price sheet, layout or floor plan, and a full cost estimate.</p>
+      </div>
+      <div class="step">
+        <h3>Visit the site</h3>
+        <p>We set up the visit with Sattva's team and walk the shortlisted units with you.</p>
+      </div>
+      <div class="step">
+        <h3>Book &amp; register</h3>
+        <p>Pay the developer directly, then sign the agreement and register, with us following up at every step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section alt" id="reviews">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Google reviews</p>
+      <h2>Sattva Buyers We've Helped</h2>
+      <p>Clients advised by {{ operator }} on Sattva projects, in their own words.</p>
+    </div>
+    <div class="review-grid">
+      <figure class="review-card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>"Recently I bought a plot at Kaveri Siri, Mandya. If Shri Rajesh Narayan had not been there, I would not have been able to buy it. He supported me with great patience until the entire process was complete."</blockquote>
+        <figcaption><span class="avatar" aria-hidden="true">MS</span><span><cite>Manjunatha Santosha</cite><span class="review-meta">Translated from Kannada</span></span></figcaption>
+        <a class="chip" href="/projects/sattva-kaveri-siri/">Sattva Kaveri Siri</a>
+      </figure>
+      <figure class="review-card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>"Excellent service and truly trustworthy property consultants. They helped me secure a great deal at Sattva Anugraha. Very professional, transparent and reliable throughout the process."</blockquote>
+        <figcaption><span class="avatar" aria-hidden="true">MR</span><span><cite>Mahesh Reddy Hunk</cite><span class="review-meta">Google review</span></span></figcaption>
+        <span class="chip">Sattva Anugraha</span>
+      </figure>
+      <figure class="review-card">
+        <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>"Mr. Narayanan Rajesh very scrupulously selected my choice of investment near the Bangalore airport, Sattva Aeropolis. Keep up the good work, Rajesh!"</blockquote>
+        <figcaption><span class="avatar" aria-hidden="true">SK</span><span><cite>Selva Kumar Subarmanium</cite><span class="review-meta">Google review</span></span></figcaption>
+        <a class="chip" href="/projects/sattva-aeropolis/">Sattva Aeropolis</a>
+      </figure>
+    </div>
+    <p class="center mt-lg"><a class="btn btn-outline-dark" href="/testimonials/">Read All Reviews</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Good to know</p>
+      <h2>Buying Through a Channel Partner: Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Is this the official Sattva Group website?</summary>
+        <div>No. {{ site_name }} is run by {{ operator }}, an independent RERA-registered agent who is an authorised channel partner for Sattva Group projects. Sattva's official website is separate.</div>
+      </details>
+      <details>
+        <summary>Will I pay more by booking through a channel partner?</summary>
+        <div>No. Channel partners are paid by the developer, so the price of a unit is the same as on Sattva's own price sheet. We share the sheet with you in writing so you can check.</div>
+      </details>
+      <details>
+        <summary>Who do I make payments to?</summary>
+        <div>Always directly to the developer's project bank account, as given in the booking form and agreement. We never collect booking amounts in our own name.</div>
+      </details>
+      <details>
+        <summary>How can I verify your RERA registration?</summary>
+        <div>Our agent registration numbers are Karnataka {{ rera_ka }} and Tamil Nadu {{ rera_tn }}. You can search them on rera.karnataka.gov.in and rera.tn.gov.in.</div>
+      </details>
+      <details>
+        <summary>Which Sattva projects do you cover?</summary>
+        <div>We currently list {{ project_count }} Sattva projects across Devanahalli and Airport Road, Yelahanka, Hennur, Doddaballapur, Old Madras Road, South Bengaluru, Nelamangala and Mandya. See them all on our <a class="text-link" href="/projects/">projects page</a>. If the one you want isn't there, ask us anyway.</div>
+      </details>
+      <details>
+        <summary>Can you help if I live outside Bengaluru or abroad?</summary>
+        <div>Yes. We can send video walkthroughs of the site and the specific plot or unit, share documents digitally, and coordinate with your family member or power-of-attorney holder for signing and registration.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to See a Sattva Project in Person?</h2>
+    <p>Tell us which project and a day that works. We'll set up the visit and send the plan with open units marked beforehand.</p>
+    <div class="actions">
+      <button class="btn btn-primary" type="button" data-open-enquiry>Book a Site Visit</button>
+      <a class="btn btn-outline" href="tel:{{ phone_tel }}">Call {{ phone_display }}</a>
+    </div>
+  </div>
+</section>

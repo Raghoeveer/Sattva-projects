@@ -1,0 +1,12 @@
+<form class="lead-form" action="https://api.web3forms.com/submit" method="POST" data-enquiry-form>
+          <input type="hidden" name="access_key" value="{{ web3forms_key }}" />
+          <input type="hidden" name="subject" value="[{{ site_name }}] Brochure/price request" />
+          <input type="hidden" name="from_name" value="{{ site_name }} website" />
+          <input type="hidden" name="page" value="" />
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="text" name="name" autocomplete="name" placeholder="Full name *" aria-label="Full name" required />
+          <input type="tel" name="phone" autocomplete="tel" placeholder="Mobile number *" aria-label="Mobile number" required pattern="[+]?[0-9 ]{10,15}" title="Enter a valid mobile number, e.g. +91 98765 43210" />
+          <input type="email" name="email" autocomplete="email" placeholder="Email" aria-label="Email" />
+          <button class="btn btn-primary" type="submit">Send Me the Details</button>
+          <p class="form-note">By submitting you agree to our <a href="/privacy-policy/">privacy policy</a>.</p>
+        </form>

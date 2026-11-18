@@ -1,0 +1,23 @@
+<button class="side-tab" type="button" data-open-enquiry>Get Brochure/Price</button>
+
+    <div class="sticky-cta">
+      <a class="btn btn-call" href="tel:{{ phone_tel }}">
+        <span>Call</span>
+        <strong>{{ phone_display }}</strong>
+      </a>
+      <button class="btn btn-primary" type="button" data-open-enquiry><span><span class="cta-get">Get </span>Brochure/Price</span></button>
+      <a class="btn btn-whatsapp" href="https://wa.me/{{ whatsapp }}?text=Hi%2C%20please%20share%20current%20availability%20and%20pricing%20for%20Sattva%20projects." target="_blank" rel="noopener">
+        <img src="/images/brand/whatsapp.webp" alt="" width="20" height="20" />
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <div class="modal" id="enquiry-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-enquiry></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="enquiry-title">
+        <button class="modal-close" type="button" data-close-enquiry aria-label="Close">×</button>
+        <h2 id="enquiry-title">Get the brochure/price</h2>
+        <p>We'll send current availability, the layout plan and pricing, usually within the hour.</p>
+        {% include form-short.html %}
+      </div>
+    </div>

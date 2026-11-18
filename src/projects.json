@@ -1,0 +1,55 @@
+{
+  "corridors": [
+    {
+      "id": "airport-corridor",
+      "short": "Devanahalli & Airport Road",
+      "eyebrow": "North-east · near KIA",
+      "name": "Devanahalli & the Airport Corridor",
+      "intro": "Sattva's biggest cluster: five projects between Doddajala and Devanahalli, all within roughly 5 to 20 minutes of Kempegowda International Airport. They range from compact studios for renting out to large 4 BHK family homes."
+    },
+    {
+      "id": "north-bengaluru",
+      "short": "Yelahanka, Hennur & Doddaballapur",
+      "eyebrow": "North Bengaluru",
+      "name": "Yelahanka, Hennur & Doddaballapur",
+      "intro": "Three very different formats in the city's north: an apartment township on Doddaballapura Road, a small enclave of row houses off Hennur Road, and a new plotted layout at Doddaballapur."
+    },
+    {
+      "id": "east-bengaluru",
+      "short": "Old Madras Road",
+      "eyebrow": "East Bengaluru",
+      "name": "Old Madras Road & Budigere Cross",
+      "intro": "Two projects on the NH-75 stretch beyond KR Puram, each about a short drive from Whitefield and ITPL: a mid-size apartment launch at Budigere Cross and a large, low-density luxury project."
+    },
+    {
+      "id": "south-bengaluru",
+      "short": "South Bengaluru",
+      "eyebrow": "South Bengaluru",
+      "name": "JP Nagar, Kanakapura Road & Jigani",
+      "intro": "High-rise apartments in the south: a forest-themed project facing Anjanapura's central park, and 31-floor towers in the Jigani industrial belt near the Yellow Line metro."
+    },
+    {
+      "id": "plotted-outskirts",
+      "short": "Plots beyond the city",
+      "eyebrow": "Land to build on",
+      "name": "Plotted Communities Beyond the City",
+      "intro": "Gated, RERA-registered plotted layouts for buyers who'd rather build their own home: one on Tumkur Road at Nelamangala and one on the Bengaluru–Mysuru Expressway at Mandya."
+    }
+  ],
+  "projects": [
+    { "slug": "sattva-aeropolis", "name": "Sattva Aeropolis", "locality": "Boovanahalli, Devanahalli", "corridor": "airport-corridor", "type": "Apartments", "config": "Studio – 3 BHK", "price": "From ₹45.77 L*", "status": "Phase 2 selling" },
+    { "slug": "sattva-city", "name": "Sattva City", "locality": "Doddajala, Airport Road", "corridor": "airport-corridor", "type": "Township", "config": "1 – 4 BHK & penthouses", "price": "From ₹1.79 Cr*", "status": "New launch" },
+    { "slug": "sattva-park-cubix", "name": "Sattva Park Cubix", "locality": "Devanahalli Town, NH 207", "corridor": "airport-corridor", "type": "Apartments", "config": "Studio – 3 BHK", "price": "Phase 2 from ₹91 L*", "status": "Ready + Phase 2" },
+    { "slug": "sattva-vasanta-cove", "name": "Sattva Vasanta Cove", "locality": "Off Bellary Road, Devanahalli", "corridor": "airport-corridor", "type": "Apartments", "config": "Studio & 1 BHK", "price": "From ₹59 L*", "status": "New launch" },
+    { "slug": "sattva-vasanta-skye", "name": "Sattva Vasanta Skye", "locality": "Kannamangala, Bellary Road", "corridor": "airport-corridor", "type": "Township", "config": "Studio – 4 BHK", "price": "From ₹78 L*", "status": "Under construction" },
+    { "slug": "sattva-lumina", "name": "Sattva Lumina", "locality": "Rajanukunte, Yelahanka", "corridor": "north-bengaluru", "type": "Township", "config": "Studio – 3 BHK", "price": "From ₹38 L*", "status": "Under construction" },
+    { "slug": "sattva-la-vita", "name": "Sattva La Vita", "locality": "Byrathi, off Hennur Road", "corridor": "north-bengaluru", "type": "Row houses", "config": "4 BHK row houses", "price": "Price on request", "status": "Nearing handover" },
+    { "slug": "sattva-ekatra", "name": "Sattva Ekatra", "locality": "Thippapura, Doddaballapur", "corridor": "north-bengaluru", "type": "Plots", "config": "600 – 1,800 sq ft", "price": "From ₹48 L*", "status": "New launch" },
+    { "slug": "sattva-aangane", "name": "Sattva Aangane", "locality": "Old Madras Road (NH-75)", "corridor": "east-bengaluru", "type": "Apartments", "config": "3 & 4 BHK, duplexes", "price": "EOI from ₹2.81 Cr*", "status": "Pre-launch · EOI" },
+    { "slug": "sattva-songbird", "name": "Sattva Songbird", "locality": "Budigere Cross, Old Madras Road", "corridor": "east-bengaluru", "type": "Apartments", "config": "Studio – 3 BHK", "price": "2 BHK from ₹1.56 Cr*", "status": "New launch" },
+    { "slug": "sattva-forest-ridge", "name": "Sattva Forest Ridge", "locality": "Anjanapura, JP Nagar 9th Phase", "corridor": "south-bengaluru", "type": "Apartments", "config": "1 – 3 BHK", "price": "From ₹78.7 L*", "status": "Under construction" },
+    { "slug": "sattva-jigani", "name": "Sattva Jigani (Amritya)", "locality": "Jigani Main Road", "corridor": "south-bengaluru", "type": "Apartments", "config": "1 – 3 BHK", "price": "From ₹71 L*", "status": "Pre-launch · EOI" },
+    { "slug": "sattva-green-groves", "name": "Sattva Green Groves", "locality": "Nelamangala, off Tumkur Road", "corridor": "plotted-outskirts", "type": "Plots", "config": "1,200 – 1,936 sq ft", "price": "From ₹75.6 L*", "status": "Under development" },
+    { "slug": "sattva-kaveri-siri", "name": "Sattva Kaveri Siri", "locality": "Guthalu, Mandya", "corridor": "plotted-outskirts", "type": "Plots", "config": "600 – 2,400 sq ft", "price": "From ~₹28 L*", "status": "Phase II open" }
+  ]
+}

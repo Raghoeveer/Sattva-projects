@@ -1,0 +1,65 @@
+<section class="section" id="enquire">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Next step</p>
+      <h2>Talk to Us About {{ project_name }}</h2>
+      <p>Tell us what you're after. We'll check live availability with Sattva's team before we call, and set up a site visit if it looks right.</p>
+    </div>
+    <div class="grid two">
+      <div class="contact-card">
+        <h3>Reach us directly</h3>
+        <p><strong>Call:</strong> <a href="tel:{{ phone_tel }}">{{ phone_display }}</a></p>
+        <p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p><strong>Project:</strong> {{ project_locality }}</p>
+        <p><strong>Site visits:</strong> All days, by appointment</p>
+        <a class="btn btn-whatsapp" href="https://wa.me/{{ whatsapp }}?text={{ project_wa }}" target="_blank" rel="noopener">
+          <img src="/images/brand/whatsapp.webp" alt="" width="20" height="20" /> WhatsApp us
+        </a>
+      </div>
+      <div class="lead-card">
+        <h3>Request a call back</h3>
+        <p>We usually call back within the hour during the day.</p>
+        <form class="lead-form" action="https://api.web3forms.com/submit" method="POST" data-enquiry-form>
+          <input type="hidden" name="access_key" value="{{ web3forms_key }}" />
+          <input type="hidden" name="subject" value="[{{ site_name }}] {{ project_name }}: call back request" />
+          <input type="hidden" name="from_name" value="{{ site_name }} website" />
+          <input type="hidden" name="project" value="{{ project_name }}" />
+          <input type="hidden" name="page" value="" />
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label>Full name *
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+          </label>
+          <div class="form-row">
+            <label>Mobile *
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+91 98765 43210" required pattern="[+]?[0-9 ]{10,15}" title="Enter a valid mobile number, e.g. +91 98765 43210" />
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Looking for
+              <select name="configuration">
+                <option value="Not sure yet">Not sure yet</option>
+                {{ config_options }}
+              </select>
+            </label>
+            <label>Best time to call
+              <select name="call_time">
+                <option value="Anytime">Anytime</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+              </select>
+            </label>
+          </div>
+          <label>Anything else?
+            <textarea name="message" rows="3" placeholder="Budget, preferred floor or facing, or a date for your site visit"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Request Call Back</button>
+          <p class="form-note">By submitting you agree to our <a href="/privacy-policy/">privacy policy</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

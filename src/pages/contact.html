@@ -1,0 +1,132 @@
+<!--meta {
+  "title": "Contact Us | Book a Sattva Project Site Visit",
+  "description": "Call, WhatsApp or send an enquiry to book a site visit at any Sattva Group project we represent, from Devanahalli to Mandya. We respond the same day.",
+  "path": "/contact/",
+  "priority": "0.7",
+  "faq_schema": true
+} -->
+<!--head-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ base_url }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Contact", "item": "{{ base_url }}/contact/" }
+      ]
+    },
+    {
+      "@type": "ContactPage",
+      "name": "Contact {{ site_name }}",
+      "url": "{{ base_url }}/contact/",
+      "mainEntity": {
+        "@type": "RealEstateAgent",
+        "name": "{{ site_name }}",
+        "telephone": "{{ phone_tel }}",
+        "email": "{{ email }}",
+        "address": { "@type": "PostalAddress", "addressLocality": "{{ office_locality }}", "addressRegion": "{{ office_region }}", "addressCountry": "IN" }
+      }
+    }
+  ]
+}
+</script>
+<!--/head-->
+
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('/images/sattva-kaveri-siri/kaveri-siri-internal-road.webp')" aria-hidden="true"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Contact</span></nav>
+    <h1>Plan a Site Visit or Ask a Question</h1>
+    <p>Call, WhatsApp or use the form. Whatever you ask, you'll get a straight answer and no hard sell.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid two">
+      <div class="contact-card">
+        <h3>Reach us directly</h3>
+        <p><strong>Phone:</strong> <a href="tel:{{ phone_tel }}">{{ phone_display }}</a></p>
+        <p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+        <p><strong>Office:</strong> {{ office_locality }}, {{ office_region }}</p>
+        <p><strong>Hours:</strong> All days. Site visits by appointment.</p>
+        <p><strong>RERA agent:</strong> {{ operator }}<br />KA {{ rera_ka }}<br />TN {{ rera_tn }}</p>
+        <a class="btn btn-whatsapp" href="https://wa.me/{{ whatsapp }}?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Sattva%20projects." target="_blank" rel="noopener">
+          <img src="/images/brand/whatsapp.webp" alt="" width="20" height="20" /> Chat on WhatsApp
+        </a>
+      </div>
+      <div class="lead-card">
+        <h3>Send an enquiry</h3>
+        <p>Share a few details and we'll come back with availability and pricing, usually the same day.</p>
+        <form class="lead-form" action="https://api.web3forms.com/submit" method="POST" data-enquiry-form>
+          <input type="hidden" name="access_key" value="{{ web3forms_key }}" />
+          <input type="hidden" name="subject" value="[{{ site_name }}] Contact page enquiry" />
+          <input type="hidden" name="from_name" value="{{ site_name }} website" />
+          <input type="hidden" name="page" value="" />
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label>Full name *
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+          </label>
+          <div class="form-row">
+            <label>Mobile *
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+91 98765 43210" required pattern="[+]?[0-9 ]{10,15}" title="Enter a valid mobile number, e.g. +91 98765 43210" />
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label>Project
+              <select name="project">
+                {{ project_options }}
+                <option value="Another Sattva project">Another Sattva project</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </label>
+            <label>Budget
+              <select name="budget">
+                <option value="Not decided">Not decided</option>
+                <option value="Under 30 Lakh">Under ₹30 L</option>
+                <option value="30-60 Lakh">₹30 – 60 L</option>
+                <option value="60 Lakh - 1 Crore">₹60 L – 1 Cr</option>
+                <option value="Above 1 Crore">Above ₹1 Cr</option>
+              </select>
+            </label>
+          </div>
+          <label>Message
+            <textarea name="message" rows="4" placeholder="What you're looking for, and when you'd like to visit"></textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="consent" value="yes" required />
+            <span>I agree to the <a href="/privacy-policy/">privacy policy</a> and to be contacted about my enquiry.</span>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>What Happens After You Get in Touch</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How quickly will someone respond?</summary>
+        <div>Usually within the hour during the day, and always on the same day. If you message late at night, expect a reply the next morning.</div>
+      </details>
+      <details>
+        <summary>Will I be flooded with calls from multiple agents?</summary>
+        <div>No. Your details stay with us and, when you're ready to book, with the developer's team handling your booking. We don't sell or pass on enquiries.</div>
+      </details>
+      <details>
+        <summary>Can I visit the site without booking through you?</summary>
+        <div>Of course. But if you'd like us to set up the visit, we'll arrange the slot with the site team and bring the list of open plots or units, which saves you time on the day.</div>
+      </details>
+    </div>
+  </div>
+</section>

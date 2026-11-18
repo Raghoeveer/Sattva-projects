@@ -1,0 +1,143 @@
+<!--meta {
+  "title": "About Us | RERA-Registered Sattva Channel Partner",
+  "description": "Meet {{ operator }}, the K-RERA and TN-RERA registered agent behind {{ site_name }}, an authorised Sattva Group channel partner. How we work, and what we never do.",
+  "path": "/about/",
+  "priority": "0.7"
+} -->
+<!--head-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ base_url }}/" },
+        { "@type": "ListItem", "position": 2, "name": "About", "item": "{{ base_url }}/about/" }
+      ]
+    },
+    {
+      "@type": "AboutPage",
+      "name": "About {{ site_name }}",
+      "url": "{{ base_url }}/about/",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "{{ operator }}",
+        "jobTitle": "RERA-registered real estate agent",
+        "identifier": ["K-RERA {{ rera_ka }}", "TN-RERA {{ rera_tn }}"],
+        "worksFor": { "@type": "RealEstateAgent", "name": "{{ site_name }}", "url": "{{ base_url }}/" }
+      }
+    }
+  ]
+}
+</script>
+<!--/head-->
+
+<section class="page-hero">
+  <div class="hero-media" style="background-image:url('/images/sattva-kaveri-siri/kaveri-siri-entry-avenue.webp')" aria-hidden="true"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>About</span></nav>
+    <h1>The People Behind {{ site_name }}</h1>
+    <p>A small, RERA-registered team focused on Sattva Group projects, so the advice you get comes from knowing one developer's projects, paperwork and timelines very well.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Who runs this site</p>
+        <h3>{{ operator }}, RERA-registered agent</h3>
+        <p>{{ site_name }} is run by {{ operator }}, a real estate agent registered with both Karnataka RERA and Tamil Nadu RERA, who has advised home and land buyers across Bengaluru for more than ten years.</p>
+        <p>Over that time, many of the families he has helped chose Sattva projects, from apartments near the airport to plots in Mandya. This site brings that experience into one place: current Sattva inventory, honest answers about each project, and a single point of contact from the first call to the registration office.</p>
+        <p>Being a channel partner means the developer pays our fee. It doesn't mean we stop asking awkward questions on your behalf.</p>
+        <a class="btn btn-primary" href="/contact/">Speak to {{ operator }}</a>
+      </div>
+      <img src="/images/about/narayanan-rajesh-advisor.webp" alt="{{ operator }} in a property consultation with clients" width="954" height="840" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Focus</p>
+      <h2>Why a Site Just for Sattva Projects?</h2>
+      <p>General property portals list everything and know little about any one project. We chose to go the other way.</p>
+    </div>
+    <div class="grid three">
+      <article class="card">
+        <span class="icon" aria-hidden="true">🎯</span>
+        <h3>We know the paperwork</h3>
+        <p>Sattva's booking forms, agreement formats and payment schedules follow a pattern. Knowing it well means we can tell you quickly what's standard and what's worth questioning.</p>
+      </article>
+      <article class="card">
+        <span class="icon" aria-hidden="true">📞</span>
+        <h3>A direct line to the site teams</h3>
+        <p>Regular contact with Sattva's sales and site teams means faster answers on availability, revised rates and handover dates.</p>
+      </article>
+      <article class="card">
+        <span class="icon" aria-hidden="true">🧭</span>
+        <h3>Honest comparisons</h3>
+        <p>When two Sattva projects or phases both fit your brief, we lay out the trade-offs plainly: location, price, timeline and resale. Then you decide.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Ground rules</p>
+      <h2>What We Do, and What We Never Do</h2>
+    </div>
+    <div class="grid two">
+      <div class="list-card">
+        <h3>We always</h3>
+        <ul>
+          <li>Share the developer's price sheet in writing before you decide</li>
+          <li>Give you the project's RERA number and where to check it</li>
+          <li>Estimate stamp duty, registration and developer charges up front</li>
+          <li>Tell you when a unit or plot has a drawback we know about</li>
+          <li>Respond on the same day you contact us</li>
+        </ul>
+      </div>
+      <div class="list-card cross">
+        <h3>We never</h3>
+        <ul>
+          <li>Collect booking money or payments in our own name</li>
+          <li>Charge buyers a fee on top of the developer's price</li>
+          <li>Promise guaranteed returns or appreciation</li>
+          <li>Push you to book on the day of a site visit</li>
+          <li>Share your details with anyone other than the developer handling your booking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-title">
+      <p class="eyebrow">Credentials</p>
+      <h2>Registrations You Can Verify</h2>
+    </div>
+    <div class="stats">
+      <div><strong>Karnataka RERA</strong><span>{{ rera_ka }}</span></div>
+      <div><strong>Tamil Nadu RERA</strong><span>{{ rera_tn }}</span></div>
+      <div><strong>10+ years</strong><span>Advising buyers across Bengaluru</span></div>
+    </div>
+    <p class="muted center mt-lg">Look up agent registrations at <a class="text-link" href="https://rera.karnataka.gov.in" target="_blank" rel="noopener">rera.karnataka.gov.in</a> and <a class="text-link" href="https://rera.tn.gov.in" target="_blank" rel="noopener">rera.tn.gov.in</a>.</p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Have a Question About a Sattva Project?</h2>
+    <p>Ask us anything, from price and availability to whether a project actually suits you. No obligation.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/contact/">Get in Touch</a>
+      <a class="btn btn-outline" href="/testimonials/">Read Client Reviews</a>
+    </div>
+  </div>
+</section>

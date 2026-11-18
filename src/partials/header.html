@@ -1,0 +1,22 @@
+<a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="{{ brand_href }}" class="brand" aria-label="{{ brand_label }}">
+          <img src="/images/brand/sattva-logo-header.png" alt="Sattva" width="260" height="144" />
+          <span class="brand-tag">{{ site_tagline }}</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          {{ nav_links }}
+        </div>
+        <div class="nav-cta">
+          <a class="btn btn-call" href="tel:{{ phone_tel }}">
+            <span>Talk to us</span>
+            <strong>{{ phone_display }}</strong>
+          </a>
+          <button class="btn btn-primary" type="button" data-open-enquiry>Enquire</button>
+        </div>
+      </nav>
+    </header>
