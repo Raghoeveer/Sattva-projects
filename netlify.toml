@@ -1,0 +1,5 @@
+# The built site lives in public/ (run `python3 build.py` locally and commit it).
+# No build command, so Netlify serves exactly what's committed.
+[build]
+  publish = "public"
+  command = ""
