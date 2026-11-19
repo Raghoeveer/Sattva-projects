@@ -197,7 +197,7 @@ def emi_section(p, meta):
         emi = loan * r * (1 + r) ** n / ((1 + r) ** n - 1)
         body.append(f"<tr><th scope=\"row\">{html.escape(label)}</th><td>{inr(price)}</td><td>{inr(loan)}</td>"
                     f"<td class=\"price-cell\">{inr_exact(emi)} / month</td><td>{inr(price - loan)}</td></tr>")
-    kind = "plot loan" if ltv < 0.8 else "home loan"
+    kind = meta.get("emi_kind") or ("plot loan" if ltv < 0.8 else "home loan")
     return f"""<section class="section alt" id="emi">
   <div class="container">
     <div class="section-title">
